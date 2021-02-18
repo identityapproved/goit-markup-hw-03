@@ -8,6 +8,16 @@
   --adress-transparency-color: rgba(255, 255, 255, 0.6);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* Remove markers from lists */
 ul {
   list-style: none;
@@ -45,6 +55,14 @@ body {
   margin: 0px;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+}
+
 /* header */
 
 .logo {
@@ -71,7 +89,7 @@ header .logo-fragment {
   color: var(--accent-color);
 }
 
-.active {
+.current {
   color: var(--accent-color);
 }
 
