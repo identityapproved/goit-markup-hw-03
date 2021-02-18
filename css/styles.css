@@ -1,3 +1,25 @@
+:root {
+  --black: #000;
+  --titles-color: #212121;
+  --accent-color: #2196f3;
+  --text-color: #757575;
+  --footerbackground: #2f303a;
+  --white: #fff;
+  --adress-transparency-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Remove markers from lists */
+ul {
+  list-style: none;
+}
+
+/* Remove underline from urls */
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Visually Hidden */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -20,9 +42,10 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--white-color);
   color: var(--text-color);
+  margin: 0px;
 }
 
-/* headerr */
+/* header */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -65,6 +88,8 @@ header .address-item {
   color: var(--accent-color);
 }
 
+/* Centered */
+
 /* Hero */
 
 .hero {
@@ -73,6 +98,10 @@ header .address-item {
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
+  max-width: 1600px;
+  padding-top: ;
+  padding-bottom: ;
+  text-align: center;
 }
 
 .hero-title {
@@ -124,6 +153,14 @@ header .address-item {
 }
 
 /* portfolio */
+
+.buttons {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  border: 1px solid transparent;
+}
 
 .list {
   font-size: 16px;
