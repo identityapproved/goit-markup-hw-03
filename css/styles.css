@@ -8,10 +8,6 @@
   --adress-transparency-color: rgba(255, 255, 255, 0.6);
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -60,12 +56,15 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1170px;
+  max-width: 1170px;
 }
 
 /* header */
 
 .logo {
+  display: block;
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -77,19 +76,45 @@ header .logo-fragment {
   color: var(--black);
 }
 
-.nav-link {
+.page-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--titles-color);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.link:hover,
+.link:focus {
   color: var(--accent-color);
 }
 
-.current {
+.nav-item .current {
   color: var(--accent-color);
 }
 
@@ -101,12 +126,19 @@ header .address-item {
   color: var(--text-color);
 }
 
+header .contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-item:last-child {
+  margin-left: 50px;
+}
+
 .address-item:hover,
 .address-item:focus {
   color: var(--accent-color);
 }
-
-/* Centered */
 
 /* Hero */
 
@@ -117,9 +149,12 @@ header .address-item {
   line-height: 1.4;
   letter-spacing: 0.06em;
   max-width: 1600px;
-  padding-top: ;
-  padding-bottom: ;
   text-align: center;
+  padding-top: 199px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ececec;
 }
 
 .hero-title {
@@ -138,9 +173,24 @@ header .address-item {
   line-height: 1.9;
   letter-spacing: 0.06em;
   border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* benefits sections */
+
+.sections {
+  margin-top: 94px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 0;
+}
 
 .benefits-title {
   font-size: 14px;
@@ -149,15 +199,29 @@ header .address-item {
   color: var(--titles-color);
 }
 
+/* About */
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
   font-size: 36px;
   line-height: 1.2;
   color: var(--titles-color);
 }
 
+.about .list {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
 /* Team */
 
 .member {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -165,6 +229,9 @@ header .address-item {
 }
 
 .post {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.2;
   color: var(--text-color);
