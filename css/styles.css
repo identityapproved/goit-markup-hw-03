@@ -57,6 +57,9 @@ body {
   max-width: 1170px;
 }
 
+section {
+}
+
 /* header */
 
 .logo {
@@ -185,8 +188,8 @@ header .address-item:last-child {
 
 /* benefits sections */
 
-.sections {
-  margin-top: 94px;
+section {
+  padding-bottom: 94px;
 }
 
 .list {
@@ -251,8 +254,8 @@ header .address-item:last-child {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 0px;
+  margin: 0 0;
+  padding-top: 94px;
 }
 
 .buttons .button {
@@ -276,7 +279,6 @@ header .address-item:last-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 94px auto;
   /* flex-basis: ; */
 }
 
@@ -302,7 +304,6 @@ header .address-item:last-child {
 footer {
   /* display: flex; */
   /* align-items: baseline; */
-  margin-top: 94px;
   margin-right: 1154;
   margin-left: 215;
   background-color: var(--footerbackground);
