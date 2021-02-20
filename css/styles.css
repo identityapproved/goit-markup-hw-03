@@ -52,10 +52,8 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
   max-width: 1170px;
 }
 
@@ -63,13 +61,15 @@ body {
 
 .logo {
   display: block;
-  margin-right: 93px;
-
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--accent-color);
+}
+
+header .logo {
+  margin: 24px 93px 24px 0;
 }
 
 header .logo-fragment {
@@ -79,7 +79,8 @@ header .logo-fragment {
 header .container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  min-height: 80px;
 }
 
 .nav {
@@ -92,7 +93,12 @@ header .container {
 .nav-item {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+}
+
+header .nav ul {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item:not(:last-child) {
@@ -165,7 +171,7 @@ header .address-item:last-child {
   text-transform: uppercase;
 }
 
-.hero button {
+.hero .button {
   background-color: var(--accent-color);
   color: var(--white);
   font-weight: 700;
@@ -211,7 +217,9 @@ header .address-item:last-child {
   color: var(--titles-color);
 }
 
-.about .list {
+.list {
+  display: flex;
+  justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 0;
 }
@@ -240,11 +248,40 @@ header .address-item:last-child {
 /* portfolio */
 
 .buttons {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 0px;
+}
+
+.buttons .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border: none;
   border-radius: 4px;
   padding: 6px 22px;
-  text-align: center;
-  border: 1px solid transparent;
+  margin: 0 4px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 94px auto;
+  /* flex-basis: ; */
+}
+
+.tumb {
+  padding: 24px 20px;
 }
 
 .list {
