@@ -25,6 +25,16 @@ a {
   font-style: normal;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 /* Visually Hidden */
 .visually-hidden {
   position: absolute;
@@ -57,6 +67,10 @@ body {
   max-width: 1170px;
 }
 
+section {
+  padding-bottom: 94px;
+}
+
 /* header */
 
 .logo {
@@ -81,6 +95,7 @@ header .container {
   align-items: center;
   /* justify-content: center; */
   min-height: 80px;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -163,7 +178,12 @@ header .address-item:last-child {
   border: 1px solid #ececec;
 }
 
+.hero-section {
+  padding: 0;
+}
+
 .hero-title {
+  padding-bottom: 30px;
   font-weight: 900px;
   font-size: 44px;
   line-height: 1.36;
@@ -185,10 +205,6 @@ header .address-item:last-child {
 
 /* benefits sections */
 
-section {
-  padding-bottom: 94px;
-}
-
 .list {
   display: flex;
   justify-content: space-between;
@@ -199,17 +215,34 @@ section {
 }
 
 .benefits-title {
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--titles-color);
 }
 
+.benefits-list {
+  display: flex;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 94px 0 0 0;
+  margin-left: -30px;
+}
+
+.benefits-list > li {
+  width: 270px;
+  margin-left: 30px;
+}
+
 /* About */
 
 .section-title {
-  margin-top: 0;
-  margin-bottom: 50px;
+  /* margin-top: 0;
+  margin-bottom: 50px; */
+  margin: 0;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   font-size: 36px;
@@ -217,14 +250,11 @@ section {
   color: var(--titles-color);
 }
 
-.list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-
 /* Team */
+
+.team {
+  padding-top: 94px;
+}
 
 .member {
   margin-top: 30px;
@@ -253,6 +283,7 @@ section {
   justify-content: center;
   margin: 0 0;
   padding-top: 94px;
+  padding-bottom: 34px;
 }
 
 .buttons .button {
@@ -267,7 +298,8 @@ section {
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button:active {
   background-color: var(--accent-color);
   color: var(--white);
 }
@@ -287,6 +319,10 @@ section {
 
 .tumb {
   padding: 24px 20px;
+}
+
+.tumb > h2 {
+  padding-bottom: 4px;
 }
 
 .list {
