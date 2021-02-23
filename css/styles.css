@@ -6,6 +6,7 @@
   --footerbackground: #2f303a;
   --white: #fff;
   --adress-transparency-color: rgba(255, 255, 255, 0.6);
+  --card-set-gap: 30px;
 }
 
 *,
@@ -33,6 +34,12 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Visually Hidden */
@@ -286,7 +293,7 @@ header .address-item:last-child {
   padding-bottom: 34px;
 }
 
-.buttons .button {
+.buttons .btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -295,47 +302,45 @@ header .address-item:last-child {
   border-radius: 4px;
   padding: 6px 22px;
   margin: 0 4px;
+  cursor: pointer;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
+.btn:hover,
+.btn:focus,
+.btn:active {
   background-color: var(--accent-color);
   color: var(--white);
 }
 
-.portfolio {
+.card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: (-1 * var(--card-set-gap));
+  margin-top: (-1 * var(--card-set-gap));
 }
 
-.portfolio > .item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+.card-set > .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
-.tumb {
+.card-content {
   padding: 24px 20px;
 }
 
-.tumb > h2 {
-  padding-bottom: 4px;
-}
-
-.list {
-  font-size: 16px;
-  line-height: 1.9;
-}
-
-.list-title {
+.card-title {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.06em;
   line-height: 2;
   color: var(--titles-color);
+  padding-bottom: 4px;
+}
+
+.card-content > p {
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 /* footer */
