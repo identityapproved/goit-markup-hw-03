@@ -17,6 +17,8 @@
 
 /* Remove markers from lists */
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -102,6 +104,9 @@ header .container {
   align-items: center;
   /* justify-content: center; */
   min-height: 80px;
+}
+
+header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -229,12 +234,16 @@ header .address-item:last-child {
   color: var(--titles-color);
 }
 
+.benefitsection {
+  padding-top: 94px;
+}
+
 .benefits-list {
   display: flex;
 
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 94px 0 0 0;
+  padding: 0;
   margin-left: -30px;
 }
 
@@ -315,8 +324,8 @@ header .address-item:last-child {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: (-1 * var(--card-set-gap));
-  margin-top: (-1 * var(--card-set-gap));
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .card-set > .item {
@@ -327,6 +336,7 @@ header .address-item:last-child {
 
 .card-content {
   padding: 24px 20px;
+  border: 1px solid #eeeeee;
 }
 
 .card-title {
